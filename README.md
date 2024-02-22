@@ -23,8 +23,32 @@ The public key (id_rsa) should be sent to the owner of the repository in order t
 4) check commit logs: `git log`
 5) send changed data from local machine to GitHub: `git push`
 #### Get changed files fom GitHub to local machine
-1) to get changed data from GitHub to local machine: `git pull`
+- to get changed data from G 	itHub to local machine: `git pull`
 #### Open Git GUI (User Interface)
-1) run in Git Bash command `git gui&`
+- run in Git Bash command `git gui&`
 #### Open Git history commits in GUI
-1) run in Git Bash command `git gitk&`
+- run in Git Bash command `git gitk&`
+## Undoing changes
+![Git undoing changes](image-1.png)
+
+**Working directory (before you apply `git add .`)**
+- `git checkout -- README.md` - this command undoing all changes in file `README.md`
+-  `git checkout .` - this command undoing all changes in all files
+-  `git clean -xdf ` - this command delete all files that were not previously committed
+
+**Staging area (after `git add .`)**
+- `git reset -- README.md` - this command return file to stage before `git add .`
+
+**Local branch (afrer `git commit -m "commit here"`)**
+- `git reset HEAD~1` - this command remove last commit **HEAD~(1)** -it is last commit if you want remove **2** last commit you should use `git reset HEAD~2`
+- `git commit --amend -m "commit message"` - allow us add additional commit to previous commit, you may also do this via `git gui&`
+
+**Remot repository**
+- `git revert <sha1>`
+
+## Git reset
+![Git reset](image.png)
+
+- `git reset --soft HEAD~1` - reset last one commit and return to after `git add .` stage
+- `git reset --mixed HEAD~1` - reset last one commit and return to before `git add .` stage
+- `git reset --hard HEAD~1` - remove totally last one commit
