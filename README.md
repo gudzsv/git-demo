@@ -29,7 +29,7 @@ The public key (id_rsa) should be sent to the owner of the repository in order t
 #### Open Git history commits in GUI
 - run in Git Bash command `git gitk&`
 ## Undoing changes
-![Git undoing changes](./assets/image-1.png)
+![Git undoing changes](image-1.png)
 
 **Working directory (before you apply `git add .`)**
 - `git checkout -- README.md` - this command undoing all changes in file `README.md`
@@ -47,7 +47,7 @@ The public key (id_rsa) should be sent to the owner of the repository in order t
 - `git revert <sha1>`
 
 ## Git reset
-![Git reset](./assets/image.png)
+![Git reset](image.png)
 
 - `git reset --soft HEAD~1` - reset last one commit and return to after `git add .` stage
 - `git reset --mixed HEAD~1` - reset last one commit and return to before `git add .` stage
