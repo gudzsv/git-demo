@@ -55,3 +55,36 @@ The public key (id_rsa) should be sent to the owner of the repository in order t
 
 ## Git revert
 - `git revert f9548162385cad4b34a65d6552baafe274519598` - removed commit this is `f9548162385cad4b34a65d6552baafe274519598` commit id
+
+
+## Branching and merge
+- **Branch concept**
+![Branch concept](./assets/image-2.png)
+
+- **Fast forward merge**
+![Fast-forward merge](./assets/image-3.png)
+
+*Creating Branch*
+- `git checkout -b branchName`
+after changes in project you perform steps as before
+1. `git add .`
+2. `git commit -m "save changes in branch"`
+3. `git checkout main` - change branch to main
+4. `git marge branchName` - merge feature from branch "branchName"
+
+- **Non Fast forward merge**
+![None fast-forward merge](./assets/image-4.png)
+
+![None fast-forward merge](./assets/image-5.png)
+
+**Example**
+- main branch make changes
+  1. `git add .`
+  2. `git commit -m "added commit in main branch"`
+- change branch to "branchName" and make changes
+  1. `git checkout branchName`
+  2. `git add .`
+  3. `git commit -m "added commit in "branchName" branch"`
+- change branch from "branchName" to main branch
+  1. `git checkout main`
+  2. `git marge branchName`
