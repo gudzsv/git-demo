@@ -26,3 +26,5 @@ The public key (id_rsa) should be sent to the owner of the repository in order t
 1) to get changed data from GitHub to local machine: `git pull`
 #### Open Git GUI (User Interface)
 1) run in Git Bash command `git gui&`
+#### Open Git history commits in GUI
+1) run in Git Bash command `git gitk&`
