@@ -52,5 +52,3 @@ The public key (id_rsa) should be sent to the owner of the repository in order t
 - `git reset --soft HEAD~1` - reset last one commit and return to after `git add .` stage
 - `git reset --mixed HEAD~1` - reset last one commit and return to before `git add .` stage
 - `git reset --hard HEAD~1` - remove totally last one commit
-
-## Git revert
