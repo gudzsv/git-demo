@@ -56,6 +56,7 @@ The public key (id_rsa) should be sent to the owner of the repository in order t
 ## Git revert
 - `git revert f9548162385cad4b34a65d6552baafe274519598` - removed commit this is `f9548162385cad4b34a65d6552baafe274519598` commit id
 
+<<<<<<< HEAD
 
 ## Branching and merge
 - **Branch concept**
@@ -88,3 +89,6 @@ after changes in project you perform steps as before
 - change branch from "branchName" to main branch
   1. `git checkout main`
   2. `git marge branchName`
+
+## New Task
+
