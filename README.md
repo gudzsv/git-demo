@@ -12,6 +12,7 @@ The public key (id_rsa) should be sent to the owner of the repository in order t
 ***Username and email settings:***
 1) add git config username: `git config --global user.name “FirstName SecondName“`
 2) add git config email: `git config --global user.email “mail@test.com"`
+3) default text editor `git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe'"`
 
 #### Clone GitHub repository to local machine
 1) open Git Bash in folder where you want to copy repository
@@ -123,6 +124,44 @@ after changes in project you perform steps as before
 - save working directory `git stash save "description"`
 - view stashes `git stash view`
 - bring them back
-  1. `git stash pop` (and remote from stash)
+  1. `git stash pop` (and remove from stash)
   2. `git stash apply` (leave in stash)
 - remove `git stash drop` (clear)
+
+## Remotes
+![remotes](./assets/image-15.png)
+
+**Add**
+- `git remote add <name> <url>`
+- `git remote add origin git@github.com:user/repo.git`
+
+**View**
+- `git remote -v`
+- `git remote show <name>`
+
+**Remove repository**
+- `git remote remove origin`
+
+
+## Branching strategies
+- Centralized strategy
+![centralized strategy](./assets/image-16.png)
+
+- Future-branch workflow
+![future-branch workflow](./assets/image-17.png)
+
+- Git flow
+![it flow](./assets/image-18.png)
+
+- Integration Manager workflow
+![integration Manager workflow](./assets/image-19.png)
+
+- Dictator and Lieutenants workflow
+![alt text](./assets/image-20.png)
+
+- Forking workflow
+![forking workflow](./assets/image-21.png)
+
+
+## Extras
+![Extras](./assets/image-22.png)
