@@ -27,7 +27,9 @@ The public key (id_rsa) should be sent to the owner of the repository in order t
 #### Open Git GUI (User Interface)
 - run in Git Bash command `git gui&`
 #### Open Git history commits in GUI
-- run in Git Bash command `git gitk&`
+- run in Git Bash command `gitk&`
+#### View all branches in repository
+- run in Git Bash command  `git branch --all`
 ## Undoing changes
 ![Git undoing changes](./assets/image-1.png)
 
@@ -55,8 +57,6 @@ The public key (id_rsa) should be sent to the owner of the repository in order t
 
 ## Git revert
 - `git revert f9548162385cad4b34a65d6552baafe274519598` - removed commit this is `f9548162385cad4b34a65d6552baafe274519598` commit id
-
-<<<<<<< HEAD
 
 ## Branching and merge
 - **Branch concept**
@@ -90,5 +90,39 @@ after changes in project you perform steps as before
   1. `git checkout main`
   2. `git marge branchName`
 
-## New Task
+## Conflict Solving
+![conflict solving](./assets/image-6.png)
 
+## Rebace
+- created branch
+- added new features to branch with 2 commits
+![commit](./assets/image-8.png)
+- added 2 commits to main branch
+![added new commit in master](./assets/image-7.png)
+- rebase main branch to new branch base changed from C to E commit in separate branch
+![after rebase](./assets/image-9.png)
+- Golden rule
+![golden rule rebase](./assets/image-10.png)
+
+
+## Cherry-pick
+![master](./assets/image-11.png)
+![cherry-pick D commit](./assets/image-12.png)
+
+
+## Tags (short text marker)
+![tags](./assets/image-13.png)
+**Tags commands:**
+- mark commit with tag `git tag var1`
+- view tags `git tag -list`
+- push `git push --tags`
+- check it out `git checkout ver1`
+
+## Stashing (spacial storage)
+![stashing](./assets/image-14.png)
+- save working directory `git stash save "description"`
+- view stashes `git stash view`
+- bring them back
+  1. `git stash pop` (and remote from stash)
+  2. `git stash apply` (leave in stash)
+- remove `git stash drop` (clear)
